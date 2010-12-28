@@ -5,12 +5,10 @@ var setTitle = function(input, prefix)
 		Helper method for changing document.title in a stylistically uniform way
 		dependencies: capitalize, site
 	*/
-	input = input || "";
-	prefix = prefix || "";
+	input = input.toString() || "";
+	prefix = prefix.toString() || "";
 	if(input.length > 0)
 	{
-		// convert input to string in case we are processing floats, ints, etc.
-		input = input.toString();
 		// capitalize the title and add a seperator and the site name
 		var title = capitalize(input, true) +  " | " + window.site.name;
 		// set the title
