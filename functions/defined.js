@@ -2,7 +2,7 @@ var defined = function(input)
 {
 	/*
 		defined
-		Way to safely check if an item is defined
+		Simple way to safely check if an item is defined
 	*/
 	try
 	{
