@@ -7,7 +7,6 @@ var setTitle = function(input, prefix)
 	*/
 	input = input || "";
 	prefix = prefix || "";
-	// input is supplied
 	if(input.length > 0)
 	{
 		// convert input to string in case we are processing floats, ints, etc.
@@ -17,7 +16,6 @@ var setTitle = function(input, prefix)
 		// set the title
 		window.document.title = title;
 	}
-	// no input supplied
 	else
 	{
 		// use the current title
